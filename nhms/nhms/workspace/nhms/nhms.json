@@ -1,0 +1,59 @@
+{
+ "charts": [
+  {
+   "chart_name": "Patient Evolution",
+   "label": "Patient Evolution"
+  }
+ ],
+ "content": "[{\"id\":\"MYmsger7C7\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">NHMS</span>\",\"col\":12}},{\"id\":\"_sXMfRujIr\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Patient Evolution\",\"col\":12}},{\"id\":\"avCqWEzl6q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patients\",\"col\":4}},{\"id\":\"A2BBolHdMm\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Bilans\",\"col\":4}},{\"id\":\"PdPkM3RrLi\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Doctors\",\"col\":4}}]",
+ "creation": "2024-06-29 21:02:35.028764",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "color-review-points",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "NHMS",
+ "links": [],
+ "modified": "2024-06-29 21:35:58.409426",
+ "modified_by": "Administrator",
+ "module": "NHMS",
+ "name": "NHMS",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Patients",
+   "link_to": "Patient",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Doctors",
+   "link_to": "User",
+   "stats_filter": "[[\"Has Role\",\"role\",\"=\",\"Doctor\",false]]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Bilans",
+   "link_to": "Bilan",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "NHMS"
+}

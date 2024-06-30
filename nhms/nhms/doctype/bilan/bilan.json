@@ -1,0 +1,151 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-29 21:25:17.843924",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient",
+  "column_break_dulp",
+  "date",
+  "results_section",
+  "blood_pressure",
+  "heart_rate",
+  "irm",
+  "column_break_pzzu",
+  "blood_sugar",
+  "temperature",
+  "scanner",
+  "section_break_bedb",
+  "treatement",
+  "section_break_sdhh",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sdhh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bilan",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dulp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "results_section",
+   "fieldtype": "Section Break",
+   "label": "Results"
+  },
+  {
+   "fieldname": "blood_pressure",
+   "fieldtype": "Data",
+   "label": "Blood Pressure"
+  },
+  {
+   "fieldname": "heart_rate",
+   "fieldtype": "Data",
+   "label": "Heart Rate"
+  },
+  {
+   "fieldname": "irm",
+   "fieldtype": "Data",
+   "label": "IRM"
+  },
+  {
+   "fieldname": "column_break_pzzu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "blood_sugar",
+   "fieldtype": "Data",
+   "label": "Blood Sugar"
+  },
+  {
+   "fieldname": "temperature",
+   "fieldtype": "Data",
+   "label": "Temperature"
+  },
+  {
+   "fieldname": "scanner",
+   "fieldtype": "Data",
+   "label": "Scanner"
+  },
+  {
+   "fieldname": "section_break_bedb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "treatement",
+   "fieldtype": "Long Text",
+   "label": "Treatement"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-29 21:39:30.686723",
+ "modified_by": "Administrator",
+ "module": "NHMS",
+ "name": "Bilan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Doctor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nin",
+ "creation": "2024-06-29 21:05:10.362036",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_ucfq",
+  "nin",
+  "first_name",
+  "last_name",
+  "column_break_djyt",
+  "date_of_birth",
+  "sex",
+  "parents_data_section",
+  "mother_nin",
+  "column_break_qfqu",
+  "father_nin",
+  "medical_data_section",
+  "family_medical_history",
+  "allergy",
+  "chronic_illnesses",
+  "section_break_agyo",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_ucfq",
+   "fieldtype": "Section Break",
+   "label": "General Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "First Name"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Last Name"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "in_filter": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Date Of Birth"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Sex",
+   "options": "Male\nFemale"
+  },
+  {
+   "fieldname": "mother_nin",
+   "fieldtype": "Data",
+   "label": "Mother NIN"
+  },
+  {
+   "fieldname": "father_nin",
+   "fieldtype": "Data",
+   "label": "Father NIN"
+  },
+  {
+   "fieldname": "family_medical_history",
+   "fieldtype": "Text Editor",
+   "label": "Family Medical History"
+  },
+  {
+   "fieldname": "allergy",
+   "fieldtype": "Text Editor",
+   "label": "Allergy"
+  },
+  {
+   "fieldname": "chronic_illnesses",
+   "fieldtype": "Text Editor",
+   "label": "Chronic Illnesses"
+  },
+  {
+   "fieldname": "nin",
+   "fieldtype": "Data",
+   "in_filter": 1,
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "NIN",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_djyt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "parents_data_section",
+   "fieldtype": "Section Break",
+   "label": "Parents Data"
+  },
+  {
+   "fieldname": "column_break_qfqu",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "medical_data_section",
+   "fieldtype": "Section Break",
+   "label": "Medical Data"
+  },
+  {
+   "fieldname": "section_break_agyo",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-06-29 21:39:13.951581",
+ "modified_by": "Administrator",
+ "module": "NHMS",
+ "name": "Patient",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Doctor",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
