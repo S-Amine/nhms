@@ -12,10 +12,12 @@
   "blood_pressure",
   "heart_rate",
   "irm",
+  "irm_hash",
   "column_break_pzzu",
   "blood_sugar",
   "temperature",
   "scanner",
+  "scanner_hash",
   "section_break_bedb",
   "treatement",
   "section_break_sdhh",
@@ -78,7 +80,7 @@
   },
   {
    "fieldname": "irm",
-   "fieldtype": "Data",
+   "fieldtype": "Attach",
    "label": "IRM"
   },
   {
@@ -97,7 +99,7 @@
   },
   {
    "fieldname": "scanner",
-   "fieldtype": "Data",
+   "fieldtype": "Attach",
    "label": "Scanner"
   },
   {
@@ -108,12 +110,22 @@
    "fieldname": "treatement",
    "fieldtype": "Long Text",
    "label": "Treatement"
+  },
+  {
+   "fieldname": "irm_hash",
+   "fieldtype": "Data",
+   "label": "IRM HASH"
+  },
+  {
+   "fieldname": "scanner_hash",
+   "fieldtype": "Data",
+   "label": "Scanner Hash"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2024-06-29 21:39:30.686723",
+ "modified": "2024-07-02 18:35:18.123865",
  "modified_by": "Administrator",
  "module": "NHMS",
  "name": "Bilan",
