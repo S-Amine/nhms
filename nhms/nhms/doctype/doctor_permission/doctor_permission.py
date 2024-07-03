@@ -8,7 +8,7 @@ from frappe.model.document import Document
 class DoctorPermission(Document):
 	def before_save(self):
 		user = frappe.get_doc(doctype="User", username=self.doctor_nin)
-		self.created_by = frappe.session.user
+		self.created_by = frappe.session.user.username
 		frappe.share.add("Patient", self.created_by, user, read=1, write=1, submit=1, share=1, notify=1)
 		bilans = frappe.db.get_list('Bilan',
 					filters={
